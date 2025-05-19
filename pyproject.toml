@@ -1,0 +1,22 @@
+[tool.uv]
+name = "k8s-multicluster-mcp"
+version = "0.1.0"
+description = "A Kubernetes multi-cluster management control plane"
+authors = ["dbsanfte"]
+license = "MIT"
+
+[tool.uv.dependencies]
+python = "^3.11"
+fastmcp = "*"
+kubernetes = ">=28.1.0"
+httpx = "*"
+pydantic = "*"
+pyyaml = "*"
+fastapi = "*"
+uvicorn = "*"
+json-patch = "*"
+jsonpatch = "*"
+
+[build-system]
+requires = ["uv-core>=1.0.0"]
+build-backend = "uv.core.masonry.api"
